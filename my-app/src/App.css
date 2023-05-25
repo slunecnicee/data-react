@@ -1,128 +1,134 @@
 body{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color: antiquewhite;
 }
-
-
 
 .App {
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- text-align: center;
+  text-align: center;
 }
 
-.div3{
-  height: auto;
+.wrp{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap:1rem;
   flex-wrap: wrap;
-  width: 100vw;
-}
-
-
-.cocktail-container{
- width: 48vw;
- height: 82vh;
- overflow: scroll;
- box-shadow: 2px 2px 30px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-
-
-.div3 img{
-  height: 52vh;
-  width: 100%;
-}
-
-.div3 svg{
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  color: steelblue;
+  height: auto;
+  background-color: antiquewhite;
   margin-top: 1rem;
-}
-
-.div3 svg:hover {
-color: red;
-}
-
-.instr{
-  width: 96%;
-  height: 10vh;
-  overflow: scroll;
-  box-shadow: 2px 2px 10px;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   
 }
 
-
-
-.posts{
-margin-top: 2rem;
-height: auto;
+.cocktails{
+height: 42rem;
+width:  20rem;
 display: flex;
-flex-direction: column;
 justify-content: center;
 align-items: center;
-width: auto;
+flex-direction: column;
+overflow: scroll;
+box-shadow: 5px 5px 30px black;
+position: relative;
+
+}
+
+.cocktail-name{
+  height: 13%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-shadow: 2px 2px 5px;
 }
 
 
-.post-items{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  width: 95%;
+.cocktails img{
+  height:50%;
+  width: 100%;
+  position: absolute;
+  top:13%;
+}
+
+.instr{
+  position: absolute;
+  top:63%;
+  height:30%;
+  overflow: hidden;
 }
 
 
-.post-item{
-  box-shadow: 2px 2px 30px ;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 92%;
-}
 
-button{
-  height: 5vh;
-  width: 20vw;
+.cocktails button {
   border: none;
+  height: 5vh;
+  width: 30vw;
+  border-radius: 40px;
   background-color: #333;
-  color: aliceblue;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 2px 2px 10px black;
-  text-shadow: 2px 2px 10px black;
+  color: antiquewhite;
   font-weight: bold;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  font-size: 1rem;
+  text-shadow: 2px 2px 5px black;
+  position: absolute;
+  bottom: 1rem;
 }
 
-button:hover{
+.cocktails button:hover{
   box-shadow: 5px 5px 30px black;
+  cursor: pointer;
 }
+
+
+.posts-wrp{
+  height: auto;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.post-cont{
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-cont button {
+  border: none;
+  height: 30px;
+  width: 150px;
+  border-radius: 40px;
+  background-color: #333;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 1rem;
+}
+
+.post-cont button:hover {
+cursor: pointer;
+box-shadow: 5px 5px 30px black;
+}
+
 
 
 .comments-list{
   list-style: none;
 }
 
-.comment-item{
-  border-bottom: 1px solid black;
+.comment-item::after{
+content: '';
+width: 100%;
+height: 1px;
+background-color: black;
+position: absolute;
+bottom: -10px;
+left: -10px
 }
-
-
-
+.comment-item{
+position: relative;
+}

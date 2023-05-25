@@ -4,4 +4,3 @@ export const fetchCoctails = ()=>{
     .then((data)=>data.drinks);
 }
 
-

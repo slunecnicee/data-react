@@ -1,18 +1,25 @@
-
-import { FaCocktail } from 'react-icons/fa';
+import logo from './logo.svg';
 import './App.css';
-import Coctailscomponent from './components/component3';
-import PostList from './components/usersWithClass';
+import CocktailsComponant from './components/coctails';
+import PostsComponant from './components/posts';
+
+
 
 
 function App() {
   return (
     <div className="App">
+   
+<div className='wrp'>
+<CocktailsComponant/>
+</div>
 
-    <Coctailscomponent/>
-   <PostList/>
+<div className='posts-wrp'>
+<PostsComponant/>
+</div>
 
-    </div>
+
+ </div>
   );
 }
 
